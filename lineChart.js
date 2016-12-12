@@ -30,3 +30,23 @@ var viz = svg.append("path")
 .attr("stroke-width","2")
 .attr("fill","none");
 
+var lables = svg.selectAll("text")
+   .data(monthlySales)
+   .enter()
+   .append("text")
+   .text(function(d){return d.sales;})
+   .attr("x",function(d){return d.month*2;})
+   .attr("y",function(d){return h-d.sales;})
+   .attr("text-anchor","start")
+   .attr("fill","#666666")
+   .attr("dy",".35em")
+   .attr("font-",".35em")
+   .attr("font-weight",function(d,i){
+       if(i===0 || i==(montlySales.length-1)){
+	   return "bold";
+	}else{
+	    return "normal";}
+   })
+
+
+
