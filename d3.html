@@ -1,0 +1,28 @@
+<html>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    
+<body>
+    <!----Draw Rectrangle------------------>
+<!--svg>
+  <rect width="50" height="200" style="fill: red;"/>
+</svg>
+    <script>
+	d3.select("body").append("svg").append("rect").attr("width",50).attr("height",200).style("fill","blue");
+    </script-->
+<!-----------------Draw Circle------------------------->
+    <!--svg width="50" height="50">
+       <circle cx="25" cy="25" r="25" style="fill:blue;"/>
+    </svg>
+    <script>
+	d3.select("body").append("svg").attr("width",50).attr("height",50).append("circle").attr("cx",25).attr("cy",25).attr("r",25).style("fill","purple");
+    </script>
+    
+<!-------Do Text ------------------------>
+ <svg width="50" height="50">
+       <text x="25" y="50"> Hi </text>
+    </svg>
+    <script>
+	d3.select("body").append("svg").attr("width",250).attr("height",50).append("text").text("hello").attr("x",25).attr("y",50).style("fill","purple");
+    </script>
+</body>
+</html>
